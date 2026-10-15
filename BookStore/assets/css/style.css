@@ -1,7 +1,5 @@
 
-/* =========================
-   1. RESET AND VARIABLES
-========================= */
+
 :root {
   --primary: #a65b3f;
   --primary-dark: #81432e;
@@ -98,9 +96,7 @@ h2 {
   color: var(--muted);
 }
 
-/* =========================
-   2. HEADER AND NAVIGATION
-========================= */
+ 
 .site-header {
   background: var(--white);
   border-bottom: 1px solid var(--border);
@@ -182,10 +178,7 @@ h2 {
   color: var(--ink);
   font-size: 26px;
 }
-
-/* =========================
-   3. BUTTONS
-========================= */
+ 
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -469,7 +462,9 @@ h2 {
   color: white;
 }
 
-
+/* =========================
+   8. PROMO BANNER
+========================= */
 .promo {
   overflow: hidden;
   background: var(--green);
@@ -506,6 +501,9 @@ h2 {
   letter-spacing: 2px;
 }
 
+/* =========================
+   9. NEWSLETTER
+========================= */
 .newsletter {
   display: flex;
   gap: 12px;
@@ -521,6 +519,9 @@ h2 {
   background: var(--cream);
 }
 
+/* =========================
+   10. CATALOG PAGE
+========================= */
 .page-section {
   min-height: 65vh;
   padding-block: 55px 80px;
@@ -565,7 +566,9 @@ h2 {
   text-align: center;
 }
 
- 
+/* =========================
+   11. PRODUCT DETAIL
+========================= */
 .breadcrumbs {
   margin-bottom: 30px;
   color: var(--muted);
@@ -651,7 +654,9 @@ h2 {
   color: var(--muted);
 }
 
- 
+/* =========================
+   12. LOGIN AND REGISTER
+========================= */
 .auth-page {
   min-height: 100vh;
   background: var(--cream);
@@ -752,7 +757,9 @@ h2 {
   text-align: center;
 }
 
- 
+/* =========================
+   13. FOOTER
+========================= */
 .site-footer {
   padding-block: 35px;
   border-top: 1px solid var(--border);
@@ -776,7 +783,9 @@ h2 {
   font-size: 11px;
 }
 
-
+/* =========================
+   14. TOAST NOTIFICATION
+========================= */
 .toast {
   position: fixed;
   right: 22px;
@@ -800,6 +809,9 @@ h2 {
   transform: translateY(0);
 }
 
+/* =========================
+   15. RESPONSIVE DESIGN
+========================= */
 @media (max-width: 950px) {
   .nav-wrap {
     gap: 16px;
