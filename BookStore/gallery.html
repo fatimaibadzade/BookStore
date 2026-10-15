@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="topbar">Free delivery on orders over $50</div>
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html">Book<span>Nest</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a class="active" href="gallery.html">Books</a>
+                <a href="gallery.html?category=Fiction">Fiction</a>
+                <a href="gallery.html?category=Education">Education</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html">Account</a>
+                <a class="cart-link" href="gallery.html">Basket <span id="cartCount">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="page-heading">
+            <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+            <h1>Our Book Collection</h1>
+            <p>Explore stories, knowledge, and inspiration.</p>
+        </div>
+
+        <div class="catalog-toolbar">
+            <input type="search" id="searchInput" placeholder="Search by title or author...">
+            <select id="categoryFilter" aria-label="Filter by category">
+                <option value="All">All categories</option>
+                <option value="Fiction">Fiction</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Education">Education</option>
+                <option value="Self-help">Self-help</option>
+                <option value="Classic">Classic</option>
+            </select>
+            <select id="sortSelect" aria-label="Sort books">
+                <option value="default">Sort by: Featured</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="title">Title: A to Z</option>
+            </select>
+        </div>
+
+        <p class="results-count" id="resultsCount"></p>
+        <div class="product-grid" id="galleryProducts"></div>
+        <p class="empty-state" id="emptyState" hidden>No books found. Try another search.</p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo footer-logo" href="index.html">Book<span>Nest</span></a>
+            <p>Stories, knowledge, and inspiration — all in one place.</p>
+            <p>© 2026 BookNest. Student project.</p>
+        </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+</body>
+
+</html>

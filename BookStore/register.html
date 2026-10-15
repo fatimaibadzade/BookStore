@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="auth-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="logo" href="index.html">Book<span>Nest</span></a>
+            <a class="text-link" href="index.html">← Back to home</a>
+        </div>
+    </header>
+
+    <main class="auth-wrapper">
+        <form class="auth-card" id="registerForm" novalidate>
+            <p class="eyebrow">JOIN OUR COMMUNITY</p>
+            <h1>Create an account</h1>
+            <p class="muted">Save your favorite books and explore more.</p>
+
+            <label for="registerName">Full name</label>
+            <input type="text" id="registerName" placeholder="Your name" required>
+            <small class="field-error" id="registerNameError"></small>
+
+            <label for="registerEmail">Email address</label>
+            <input type="email" id="registerEmail" placeholder="you@example.com" required>
+            <small class="field-error" id="registerEmailError"></small>
+
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" placeholder="At least 6 characters" required>
+            <small class="field-error" id="registerPasswordError"></small>
+
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
+            <small class="field-error" id="confirmPasswordError"></small>
+
+            <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+            <p class="auth-switch">Already registered? <a href="login.html">Login</a></p>
+            <p class="form-message" id="registerMessage" role="status"></p>
+            <p class="demo-note">Demo project only. Do not use a real or reused password.</p>
+        </form>
+    </main>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/auth.js" defer></script>
+</body>
+
+</html>
