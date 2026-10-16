@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Book Store HTML Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-social">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+      </div>
+      <p class="topbar-note">FREE SHIPPING THIS WEEK ORDER OVER - $55</p>
+      <div class="topbar-meta">
+        <button type="button">English <i class="fa-solid fa-angle-down"></i></button>
+        <button type="button">USD <i class="fa-solid fa-angle-down"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo">
+        <a href="index.html">Pustok<span>.</span></a>
+      </div>
+      <div class="header-support">
+        <i class="fa-solid fa-headset support-icon"></i>
+        <div class="support-text">
+          <span class="label">Free Support 24/7</span>
+          <span class="phone">+01-202-555-0181</span>
+        </div>
+      </div>
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="index.html" class="nav-link active">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link">SHOP</a></li>
+          <li><a href="gallery.html" class="nav-link">PAGES</a></li>
+          <li><a href="gallery.html" class="nav-link">BLOG</a></li>
+          <li><a href="login.html" class="nav-link">LOGIN</a></li>
+          <li><a href="register.html" class="nav-link">REGISTER</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-tools">
+        <a href="product-detail.html" class="cart-icon" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="badge">1</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="container header-bottom">
+      <div class="cat-wrap">
+        <button class="cat-btn" id="catBtn" type="button">
+          <i class="fa-solid fa-bars"></i>
+          <span>Browse categories</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <ul class="cat-menu" id="catMenu">
+          <li><a href="gallery.html">Arts &amp; Photography</a></li>
+          <li><a href="gallery.html">Biographies</a></li>
+          <li><a href="gallery.html">Business &amp; Money</a></li>
+          <li><a href="gallery.html">Calendars</a></li>
+          <li><a href="gallery.html">Children's Books</a></li>
+          <li><a href="gallery.html">Cookbooks</a></li>
+          <li><a href="gallery.html">Literature</a></li>
+          <li><a href="gallery.html">Mystery &amp; Thriller</a></li>
+        </ul>
+      </div>
+      <form class="search-box" action="#" onsubmit="return false;">
+        <input type="text" placeholder="Search entire store here...">
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a href="login.html" class="icon-link" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+        <a href="product-detail.html" class="icon-link" aria-label="Compare"><i class="fa-solid fa-code-compare"></i></a>
+        <a href="gallery.html" class="icon-link" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="product-detail.html" class="cart-block">
+          <div class="cart-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" id="cartBadge">1</span>
+          </div>
+          <div class="cart-info">
+            <span class="cart-title">Shopping Cart</span>
+            <span class="cart-price">£51.20</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-slider">
+    <div class="slider-container" id="heroSlider">
+      <div class="slide active">
+        <div class="container slide-content">
+          <div class="slide-text">
+            <h1>H.G. Wells<br>De Vengeance</h1>
+            <p class="subtitle">Cover Up Front Of Books And<br>Leave Summary</p>
+            <a href="product-detail.html" class="btn-outline">$78.09 - Order Now!</a>
+          </div>
+          <div class="slide-image">
+            <div class="book-mockup alignment-right">
+              <div class="book-3d front-book"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500" alt="Featured book"></div>
+              <div class="book-3d back-book"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500" alt="Featured book"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="container slide-content reverse">
+          <div class="slide-image">
+            <div class="book-mockup alignment-left">
+              <div class="book-3d back-book"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500" alt="Featured book"></div>
+              <div class="book-3d front-book"><img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500" alt="Featured book"></div>
+            </div>
+          </div>
+          <div class="slide-text">
+            <h1>J.D. Kurtness<br>De Vengeance</h1>
+            <p class="subtitle">Cover Up Front Of Books And<br>Leave Summary</p>
+            <a href="product-detail.html" class="btn-outline">$78.09 - Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-dots">
+      <button type="button" class="dot active" onclick="goToHeroSlide(0)" aria-label="Slide 1"></button>
+      <button type="button" class="dot" onclick="goToHeroSlide(1)" aria-label="Slide 2"></button>
+    </div>
+  </section>
+
+  <section class="container features-section">
+    <div class="feature-card">
+      <i class="fa-solid fa-truck"></i>
+      <div>
+        <h4>Free Shipping Item</h4>
+        <p>Orders over $500</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-rotate-left"></i>
+      <div>
+        <h4>Money Back Guarantee</h4>
+        <p>100% money back</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-piggy-bank"></i>
+      <div>
+        <h4>Cash On Delivery</h4>
+        <p>Lorem ipsum dolor amet</p>
+      </div>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-life-ring"></i>
+      <div>
+        <h4>Help &amp; Support</h4>
+        <p>Call us : + 0123.4567.89</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container promo-row">
+    <a class="promo-card promo-a" href="product-detail.html">
+      <span class="promo-kicker">BUY 3. GET FREE DELIVERY</span>
+      <strong>The Enemy</strong>
+      <em>Starting at $9.99</em>
+    </a>
+    <a class="promo-card promo-b" href="product-detail.html">
+      <span class="promo-kicker">BUY 3. GET FREE DELIVERY</span>
+      <strong>Witch Hat</strong>
+      <em>Starting at $9.99</em>
+    </a>
+    <a class="promo-card promo-c" href="product-detail.html">
+      <span class="promo-kicker">BUY 3. GET FREE DELIVERY</span>
+      <strong>An Affair</strong>
+      <em>Starting at $9.99</em>
+    </a>
+  </section>
+
+  <section class="container products-tabs">
+    <div class="tab-header">
+      <button type="button" class="tab-pill active" data-tab="featured">Featured Products</button>
+      <button type="button" class="tab-pill" data-tab="arrivals">New Arrivals</button>
+      <button type="button" class="tab-pill" data-tab="viewed">Most view products</button>
+    </div>
+    <div class="tab-panel active" id="tab-featured">
+      <div class="products-grid">
+        <article class="product-card">
+          <span class="author-tag">Cpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Beats EP Wired On-Ear Headphone-Black</a></h3>
+          <div class="product-cover">
+            <a href="product-detail.html"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300" alt="Book cover"></a>
+            <div class="product-actions">
+              <button type="button" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              <button type="button" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" aria-label="Compare"><i class="fa-solid fa-code-compare"></i></button>
+            </div>
+          </div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Lpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Beats Solo3 Wireless On-Ear Headphones 2</a></h3>
+          <div class="product-cover">
+            <a href="product-detail.html"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Book cover"></a>
+            <div class="product-actions">
+              <button type="button" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              <button type="button" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" aria-label="Compare"><i class="fa-solid fa-code-compare"></i></button>
+            </div>
+          </div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Epple</span>
+          <h3 class="product-title"><a href="product-detail.html">In 10 Minutes, I'll Give You The Truth About</a></h3>
+          <div class="product-cover">
+            <a href="product-detail.html"><img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=300" alt="Book cover"></a>
+            <div class="product-actions">
+              <button type="button" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              <button type="button" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" aria-label="Compare"><i class="fa-solid fa-code-compare"></i></button>
+            </div>
+          </div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Gpple</span>
+          <h3 class="product-title"><a href="product-detail.html">What Can You Do To Save Your BOOK</a></h3>
+          <div class="product-cover">
+            <a href="product-detail.html"><img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300" alt="Book cover"></a>
+            <div class="product-actions">
+              <button type="button" aria-label="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              <button type="button" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <button type="button" aria-label="Compare"><i class="fa-solid fa-code-compare"></i></button>
+            </div>
+          </div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-arrivals">
+      <div class="products-grid">
+        <article class="product-card">
+          <span class="author-tag">Jpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Rpple iPad with Retina Display MD510LL/A</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Bpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Koss KPH7 Lightweight Portable Headphone</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Fpple</span>
+          <h3 class="product-title"><a href="product-detail.html">3 Ways To Have (A) More Appealing BOOK</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Hpple</span>
+          <h3 class="product-title"><a href="product-detail.html">From Destruction By Social Media?</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+      </div>
+    </div>
+    <div class="tab-panel" id="tab-viewed">
+      <div class="products-grid">
+        <article class="product-card">
+          <span class="author-tag">Vpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Read This Controversial BOOK By Social Media?</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Ypple</span>
+          <h3 class="product-title"><a href="product-detail.html">Do You Really Need It? This Will Help You</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Upple</span>
+          <h3 class="product-title"><a href="product-detail.html">Here Is A Quick Cure For Book</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-14565130808-af5048053ace?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+        <article class="product-card">
+          <span class="author-tag">Tpple</span>
+          <h3 class="product-title"><a href="product-detail.html">Turn Your BOOK Into High Machine</a></h3>
+          <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=300" alt="Book cover"></a></div>
+          <div class="price-row"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container worldwide-banner">
+    <div class="worldwide-inner">
+      <div>
+        <h2>The Book<br><em>Available Worldwide</em></h2>
+        <a href="product-detail.html" class="btn-solid">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="deal-bar">
+    <div class="container">Deal of the day up to 20% off All products</div>
+  </section>
+
+  <section class="container three-lists">
+    <div class="mini-col">
+      <h3 class="col-title">Best Selling</h3>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=120" alt="">
+        <div>
+          <span>Upple</span>
+          <strong>Here Is A Quick Cure For Book</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=120" alt="">
+        <div>
+          <span>Ypple</span>
+          <strong>A Half Very Simple Things You To Save</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=120" alt="">
+        <div>
+          <span>Epple</span>
+          <strong>What You Can Learn From Bill Gates</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="mini-col">
+      <h3 class="col-title">On Sale Products</h3>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=120" alt="">
+        <div>
+          <span>Rpple</span>
+          <strong>Create Better BOOK With The Help Of Your</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=120" alt="">
+        <div>
+          <span>Tpple</span>
+          <strong>Turn Your BOOK Into High Machine</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=120" alt="">
+        <div>
+          <span>Mpple</span>
+          <strong>Revolutionize Your BOOK With These Easy</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="mini-col">
+      <h3 class="col-title">Highly Rated</h3>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=120" alt="">
+        <div>
+          <span>Wpple</span>
+          <strong>Do You Really Need It? This Will Help You</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=120" alt="">
+        <div>
+          <span>Mople</span>
+          <strong>What You Can Learn From Bill Gates</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-14565130808-af5048053ace?w=120" alt="">
+        <div>
+          <span>Cpple</span>
+          <strong>3 Ways Create Better BOOK With Help</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="container author-split">
+    <div class="author-promo">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=700" alt="Featured author">
+    </div>
+    <div class="best-month">
+      <h3 class="col-title">Best Selling</h3>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=120" alt="">
+        <div>
+          <strong>Freelance FAQ</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=120" alt="">
+        <div>
+          <strong>The Winter</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </div>
+      </a>
+      <a class="mini-item" href="product-detail.html">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=120" alt="">
+        <div>
+          <strong>Clean Is Design</strong>
+          <div class="price-row left"><span class="price">£51.20</span><span class="old-price">£65.00</span><span class="discount-badge">20%</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="container offer-banner">
+    <div class="offer-copy">
+      <h2>BUY 3. GET FREE 1.</h2>
+      <p>50% off for selected products in Pustok.</p>
+      <a href="product-detail.html" class="btn-coral">See More</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=640" alt="Stacked magazines">
+  </section>
+
+  <section class="container arts-section">
+    <h3 class="col-title">Arts &amp; Photography Books</h3>
+    <div class="products-grid">
+      <article class="product-card">
+        <span class="author-tag">Epple</span>
+        <h3 class="product-title"><a href="product-detail.html">What You Can Learn From Bill Gates</a></h3>
+        <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300" alt="Book cover"></a></div>
+        <div class="price-row"><span class="price">£51.20</span></div>
+      </article>
+      <article class="product-card">
+        <span class="author-tag">Hpple</span>
+        <h3 class="product-title"><a href="product-detail.html">A Half Very Simple Things You To Save</a></h3>
+        <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300" alt="Book cover"></a></div>
+        <div class="price-row"><span class="price">£51.20</span></div>
+      </article>
+      <article class="product-card">
+        <span class="author-tag">Upple</span>
+        <h3 class="product-title"><a href="product-detail.html">Here Is A Quick Cure For Book</a></h3>
+        <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=300" alt="Book cover"></a></div>
+        <div class="price-row"><span class="price">£51.20</span></div>
+      </article>
+      <article class="product-card">
+        <span class="author-tag">Ypple</span>
+        <h3 class="product-title"><a href="product-detail.html">Do You Really Need It? This Will Help You</a></h3>
+        <div class="product-cover"><a href="product-detail.html"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300" alt="Book cover"></a></div>
+        <div class="price-row"><span class="price">£51.20</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="container blog-section">
+    <h3 class="col-title">Latest News</h3>
+    <article class="blog-card">
+      <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500" alt="Stacked books">
+      <div class="blog-body">
+        <div class="blog-date"><strong>13</strong><span>AUG</span></div>
+        <h4>How To Water And Care For Mounted</h4>
+        <p class="blog-meta"><i class="fa-solid fa-user"></i> Post by Hastech</p>
+        <p>Virtual reality and 3-D technology are already well-established in the entertainment...</p>
+        <a href="gallery.html">Read More <i class="fa-solid fa-circle-arrow-right"></i></a>
+      </div>
+    </article>
+  </section>
+
+  <section class="container brands">
+    <span>bookhouse</span>
+    <span>paperpress</span>
+    <span>readwell</span>
+    <span>storyline</span>
+    <span>inkwell</span>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div>
+        <h2 class="footer-logo">Pustok<span>.</span></h2>
+        <p><strong>Address:</strong> Example Street 98, HH2 BacHa, New York, USA</p>
+        <p><strong>Phone:</strong> +18088 234 5678</p>
+        <p><strong>Email:</strong> suport@hastech.com</p>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">Prices drop</a></li>
+          <li><a href="#">New products</a></li>
+          <li><a href="#">Best sales</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>EXTRAS</h4>
+        <ul>
+          <li><a href="#">Delivery</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Stores</a></li>
+          <li><a href="login.html">My account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>NEWSLETTER</h4>
+        <p>You may unsubscribe at any moment.</p>
+        <form class="news-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <div class="container">Suspendisse in auctor augue. Cras fermentum est ac fermentum tempor.</div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

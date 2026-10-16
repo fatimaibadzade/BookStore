@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Product Detail</title>
+ <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+   <header class="header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html">Pustok<span>.</span></a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link active">PRODUCT DETAIL</a></li>
+          <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li><a href="login-register.html" class="nav-link">LOGIN / REGISTER</a></li>
+          <li><a href="presentation.html" class="nav-link">TEQDIMAT Q&A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+   <main class="container" style="padding: 50px 15px;">
+    <div class="detail-wrapper">
+      <div class="detail-gallery">
+        <div class="main-image">
+          <img id="detailMainImg" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600" alt="Main Book">
+        </div>
+        <div class="thumbs">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=150" onclick="changeDetailImg(this.src)" class="active-thumb">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=150" onclick="changeDetailImg(this.src)">
+          <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=150" onclick="changeDetailImg(this.src)">
+        </div>
+      </div>
+
+      <div class="detail-info">
+        <h2>H.G. Wells De Vengeance</h2>
+        <p class="author">Author: <span>H.G. Wells</span> | Category: <span>Literature</span></p>
+        <div class="price-row left">
+          <span class="price big">£51.20</span>
+          <span class="old-price">£65.00</span>
+          <span class="discount-badge">20% OFF</span>
+        </div>
+        <p class="desc">High-quality hardcover edition featuring summary and analysis notes for literature enthusiasts. Perfect addition for personal library collections.</p>
+        
+        <div class="actions">
+          <input type="number" id="prodQty" value="1" min="1" style="width: 60px; padding: 10px; font-weight: bold;">
+          <button class="btn-green" onclick="alert('Product added to cart!')">Add to Cart</button>
+        </div>
+
+         <div class="detail-tabs" style="margin-top: 40px;">
+          <div class="tab-buttons">
+            <button class="tab-btn active" onclick="switchDetailTab('desc')">Description</button>
+            <button class="tab-btn" onclick="switchDetailTab('reviews')">Reviews (2)</button>
+          </div>
+          <div id="tabDesc" class="tab-content active" style="padding: 15px 0;">
+            <p>Full commentary and complete text breakdown for H.G. Wells' famous work.</p>
+          </div>
+          <div id="tabReviews" class="tab-content" style="display: none; padding: 15px 0;">
+            <p><strong>John Doe:</strong> Excellent print quality and fast delivery!</p>
+            <p><strong>Sarah M.:</strong> Must-read classic book.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+   <footer class="footer">
+    <div class="container footer-main">
+      <div><h2 class="footer-logo">Pustok<span>.</span></h2></div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

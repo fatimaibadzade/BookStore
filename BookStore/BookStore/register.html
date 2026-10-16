@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Register</title>
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html">Pustok<span>.</span></a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link">PRODUCT DETAIL</a></li>
+          <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li><a href="login.html" class="nav-link">LOGIN</a></li>
+          <li><a href="register.html" class="nav-link active">REGISTER</a></li>
+          <li><a href="presentation.html" class="nav-link">TEQDIMAT Q&A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Register Form Section -->
+  <main class="container" style="padding: 60px 15px;">
+    <div class="auth-box">
+      <div class="auth-tabs">
+        <a href="login.html" class="auth-tab">Login</a>
+        <a href="register.html" class="auth-tab active">Register</a>
+      </div>
+
+      <form id="registerForm" class="auth-form active" onsubmit="event.preventDefault(); alert('Registration successful!');">
+        <h3>Create New Account</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 10px;">Fill in the form below to register.</p>
+
+        <label style="font-size: 12px; font-weight: bold;">Full Name *</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Email Address *</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Password *</label>
+        <input type="password" placeholder="Create password" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Confirm Password *</label>
+        <input type="password" placeholder="Repeat password" required>
+
+        <div style="font-size: 12px; margin: 10px 0 15px;">
+          <label style="display: flex; align-items: center; gap: 5px;">
+            <input type="checkbox" required> I agree to the Terms & Conditions
+          </label>
+        </div>
+
+        <button type="submit" class="btn-green">Register</button>
+
+        <p style="text-align: center; font-size: 13px; margin-top: 15px;">
+          Already have an account? <a href="login.html" style="color: #62ab00; font-weight: bold;">Login here</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><h2 class="footer-logo">Pustok<span>.</span></h2></div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
