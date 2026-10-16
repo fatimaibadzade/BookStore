@@ -226,9 +226,7 @@ h2 {
   width: 100%;
 }
 
-/* =========================
-   4. HOME HERO
-========================= */
+ 
 .hero {
   overflow: hidden;
   background: var(--cream);
@@ -294,10 +292,7 @@ h2 {
   font-size: 12px;
   font-weight: 700;
 }
-
-/* =========================
-   5. BENEFITS
-========================= */
+ 
 .benefits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -333,9 +328,7 @@ h2 {
   font-size: 12px;
 }
 
-/* =========================
-   6. SECTION HEADINGS
-========================= */
+ 
 .section-heading {
   display: flex;
   align-items: end;
@@ -353,10 +346,7 @@ h2 {
 .text-link:hover {
   text-decoration: underline;
 }
-
-/* =========================
-   7. PRODUCT CARDS
-========================= */
+ 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -462,9 +452,7 @@ h2 {
   color: white;
 }
 
-/* =========================
-   8. PROMO BANNER
-========================= */
+ 
 .promo {
   overflow: hidden;
   background: var(--green);
