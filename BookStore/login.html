@@ -1,35 +1,70 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Login</title>
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section id="auth-page" class="page-section container">
-        <div class="auth-box">
-          <div class="auth-tabs">
-            <button class="auth-tab active" onclick="switchAuth('login')">Login</button>
-            <button class="auth-tab" onclick="switchAuth('register')">Register</button>
-          </div>
-          <form id="loginForm" class="auth-form active" onsubmit="event.preventDefault(); alert('Login successful!');">
-            <h3>Welcome Back</h3>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit" class="btn-green">Login</button>
-          </form>
-          <form id="registerForm" class="auth-form" onsubmit="event.preventDefault(); alert('Registration successful!');">
-            <h3>Create Account</h3>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit" class="btn-green">Register</button>
-          </form>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html">Pustok<span>.</span></a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link">PRODUCT DETAIL</a></li>
+          <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li><a href="login.html" class="nav-link active">LOGIN</a></li>
+          <li><a href="register.html" class="nav-link">REGISTER</a></li>
+         </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Form Section -->
+  <main class="container" style="padding: 60px 15px;">
+    <div class="auth-box">
+      <div class="auth-tabs">
+        <a href="login.html" class="auth-tab active">Login</a>
+        <a href="register.html" class="auth-tab">Register</a>
+      </div>
+
+      <form id="loginForm" class="auth-form active" onsubmit="event.preventDefault(); alert('Login successful!');">
+        <h3>Welcome Back</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 10px;">Please enter your credentials to login.</p>
+        
+        <label style="font-size: 12px; font-weight: bold;">Email Address *</label>
+        <input type="email" placeholder="Enter your email" required>
+        
+        <label style="font-size: 12px; font-weight: bold;">Password *</label>
+        <input type="password" placeholder="Enter password" required>
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; margin: 5px 0 15px;">
+          <label style="display: flex; align-items: center; gap: 5px;">
+            <input type="checkbox"> Remember me
+          </label>
+          <a href="#" style="color: #62ab00;">Forgot Password?</a>
         </div>
-      </section>
-      
-     <script src="./assets/js/auth.js"></script>
+
+        <button type="submit" class="btn-green">Login</button>
+
+        <p style="text-align: center; font-size: 13px; margin-top: 15px;">
+          Don't have an account? <a href="register.html" style="color: #62ab00; font-weight: bold;">Register here</a>
+        </p>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><h2 class="footer-logo">Pustok<span>.</span></h2></div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

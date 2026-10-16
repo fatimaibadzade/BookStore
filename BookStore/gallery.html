@@ -1,74 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Gallery</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="topbar">Free delivery on orders over $50</div>
-        <div class="container nav-wrap">
-            <a class="logo" href="index.html">Book<span>Nest</span></a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-            <nav class="main-nav" id="mainNav">
-                <a href="index.html">Home</a>
-                <a class="active" href="gallery.html">Books</a>
-                <a href="gallery.html?category=Fiction">Fiction</a>
-                <a href="gallery.html?category=Education">Education</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="login.html">Account</a>
-                <a class="cart-link" href="gallery.html">Basket <span id="cartCount">0</span></a>
-            </div>
-        </div>
-    </header>
 
-    <main class="container page-section">
-        <div class="page-heading">
-            <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
-            <h1>Our Book Collection</h1>
-            <p>Explore stories, knowledge, and inspiration.</p>
-        </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html">Pustok<span>.</span></a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link">PRODUCT DETAIL</a></li>
+          <li><a href="gallery.html" class="nav-link active">GALLERY</a></li>
+          <li><a href="login-register.html" class="nav-link">LOGIN / REGISTER</a></li>
+          <li><a href="presentation.html" class="nav-link">TEQDIMAT Q&A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="catalog-toolbar">
-            <input type="search" id="searchInput" placeholder="Search by title or author...">
-            <select id="categoryFilter" aria-label="Filter by category">
-                <option value="All">All categories</option>
-                <option value="Fiction">Fiction</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Education">Education</option>
-                <option value="Self-help">Self-help</option>
-                <option value="Classic">Classic</option>
-            </select>
-            <select id="sortSelect" aria-label="Sort books">
-                <option value="default">Sort by: Featured</option>
-                <option value="low">Price: Low to High</option>
-                <option value="high">Price: High to Low</option>
-                <option value="title">Title: A to Z</option>
-            </select>
-        </div>
+  <!-- Gallery Section -->
+  <main class="container" style="padding: 50px 15px;">
+    <h2 class="section-title">BOOK & ART GALLERY</h2>
 
-        <p class="results-count" id="resultsCount"></p>
-        <div class="product-grid" id="galleryProducts"></div>
-        <p class="empty-state" id="emptyState" hidden>No books found. Try another search.</p>
-    </main>
+    <!-- Category Filters -->
+    <div class="gallery-filters" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 30px;">
+      <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+      <button class="filter-btn" onclick="filterGallery('classic')">Classic</button>
+      <button class="filter-btn" onclick="filterGallery('art')">Art & Design</button>
+      <button class="filter-btn" onclick="filterGallery('fiction')">Fiction</button>
+    </div>
 
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <a class="logo footer-logo" href="index.html">Book<span>Nest</span></a>
-            <p>Stories, knowledge, and inspiration — all in one place.</p>
-            <p>© 2026 BookNest. Student project.</p>
-        </div>
-    </footer>
-    <div class="toast" id="toast" role="status"></div>
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <div class="gallery-item item-classic">
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400" alt="Gallery">
+        <h4>Classic Literature</h4>
+      </div>
+      <div class="gallery-item item-art">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400" alt="Gallery">
+        <h4>Design & Art Edition</h4>
+      </div>
+      <div class="gallery-item item-fiction">
+        <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400" alt="Gallery">
+        <h4>Fiction & Novels</h4>
+      </div>
+      <div class="gallery-item item-art">
+        <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=400" alt="Gallery">
+        <h4>Photography Collections</h4>
+      </div>
+    </div>
+  </main>
 
-    <script src="assets/js/products.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/gallery.js" defer></script>
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><h2 class="footer-logo">Pustok<span>.</span></h2></div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
 </body>
-
 </html>

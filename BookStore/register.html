@@ -1,54 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pustok - Register</title>
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
+<body>
 
-<body class="auth-page">
-    <header class="site-header">
-        <div class="container nav-wrap">
-            <a class="logo" href="index.html">Book<span>Nest</span></a>
-            <a class="text-link" href="index.html">← Back to home</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html">Pustok<span>.</span></a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="product-detail.html" class="nav-link">PRODUCT DETAIL</a></li>
+          <li><a href="gallery.html" class="nav-link">GALLERY</a></li>
+          <li><a href="login.html" class="nav-link">LOGIN</a></li>
+          <li><a href="register.html" class="nav-link active">REGISTER</a></li>
+          <li><a href="presentation.html" class="nav-link">TEQDIMAT Q&A</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Register Form Section -->
+  <main class="container" style="padding: 60px 15px;">
+    <div class="auth-box">
+      <div class="auth-tabs">
+        <a href="login.html" class="auth-tab">Login</a>
+        <a href="register.html" class="auth-tab active">Register</a>
+      </div>
+
+      <form id="registerForm" class="auth-form active" onsubmit="event.preventDefault(); alert('Registration successful!');">
+        <h3>Create New Account</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 10px;">Fill in the form below to register.</p>
+
+        <label style="font-size: 12px; font-weight: bold;">Full Name *</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Email Address *</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Password *</label>
+        <input type="password" placeholder="Create password" required>
+
+        <label style="font-size: 12px; font-weight: bold;">Confirm Password *</label>
+        <input type="password" placeholder="Repeat password" required>
+
+        <div style="font-size: 12px; margin: 10px 0 15px;">
+          <label style="display: flex; align-items: center; gap: 5px;">
+            <input type="checkbox" required> I agree to the Terms & Conditions
+          </label>
         </div>
-    </header>
 
-    <main class="auth-wrapper">
-        <form class="auth-card" id="registerForm" novalidate>
-            <p class="eyebrow">JOIN OUR COMMUNITY</p>
-            <h1>Create an account</h1>
-            <p class="muted">Save your favorite books and explore more.</p>
+        <button type="submit" class="btn-green">Register</button>
 
-            <label for="registerName">Full name</label>
-            <input type="text" id="registerName" placeholder="Your name" required>
-            <small class="field-error" id="registerNameError"></small>
+        <p style="text-align: center; font-size: 13px; margin-top: 15px;">
+          Already have an account? <a href="login.html" style="color: #62ab00; font-weight: bold;">Login here</a>
+        </p>
+      </form>
+    </div>
+  </main>
 
-            <label for="registerEmail">Email address</label>
-            <input type="email" id="registerEmail" placeholder="you@example.com" required>
-            <small class="field-error" id="registerEmailError"></small>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div><h2 class="footer-logo">Pustok<span>.</span></h2></div>
+    </div>
+  </footer>
 
-            <label for="registerPassword">Password</label>
-            <input type="password" id="registerPassword" placeholder="At least 6 characters" required>
-            <small class="field-error" id="registerPasswordError"></small>
-
-            <label for="confirmPassword">Confirm password</label>
-            <input type="password" id="confirmPassword" placeholder="Repeat your password" required>
-            <small class="field-error" id="confirmPasswordError"></small>
-
-            <button type="submit" class="btn btn-primary btn-full">Create Account</button>
-            <p class="auth-switch">Already registered? <a href="login.html">Login</a></p>
-            <p class="form-message" id="registerMessage" role="status"></p>
-            <p class="demo-note">Demo project only. Do not use a real or reused password.</p>
-        </form>
-    </main>
-
-    <div class="toast" id="toast" role="status"></div>
-
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/auth.js" defer></script>
+  <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
